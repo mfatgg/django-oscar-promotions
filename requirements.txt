@@ -1,4 +1,5 @@
-django-oscar>=2.0
+django>=4.0
+django-oscar>=3.2
 coverage==5.3
 django-webtest==1.9.7
 pytest-django>=3.7
