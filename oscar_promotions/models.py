@@ -261,7 +261,7 @@ class HandPickedProductList(AbstractProductList):
 
     def get_queryset(self):
         return self.products.base_queryset()\
-            .order_by('%s__display_order' % OrderedProduct._meta.db_table)
+            .order_by('orderedproduct__display_order')
 
     def get_products(self):
         return self.get_queryset()
